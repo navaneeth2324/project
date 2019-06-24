@@ -25,7 +25,7 @@ SECRET_KEY = 're9z2jg$r8obp_l!nwh48+l$2faa6b=1p7xx%^998li+(zzj3m'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['cryptic-ridge-81256.herokuapp.com']
+ALLOWED_HOSTS = ['https://cryptic-ridge-81256.herokuapp.com']
 
 
 # Application definition
