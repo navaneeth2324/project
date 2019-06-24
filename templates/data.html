@@ -1,0 +1,52 @@
+
+{% extends 'base/layout.html'%}
+
+
+{% block content %}
+
+<div class="container mt-5">
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{forms}}
+        <button type="submit" class="btn btn-warning">Search</button>
+    </form>
+</div>
+
+<div class="container mt-5">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Studentname</th>
+      <th scope="col">Branch</th>
+      <th scope="col">IssueDate</th>
+      <th scope="col">SubmissionDate</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for lib in library  %}
+    <tr>
+        <th scope="row">{{lib.Studentname}}
+        <td>{{lib.Branch}}</td>
+        <td>{{lib.IssueDate}}</td>
+        <td>{{lib.SubmissionDate}}</td>
+        
+        <td>
+            <a href="/editrecord/{{lib.Studentname}}">
+              <span class="text-muted">Edit</span>
+            </a>
+            <a href="/deleterecord/{{lib.Studentname}}">
+              <span class="text-danger">Delete</span>
+            </a>
+              
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+    
+</div>
+
+
+
+
+{% endblock  %}

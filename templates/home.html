@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>web</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        {%load static%}
+</head>
+        
+    <body >
+            
+        <div class="container mb-5">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        
+                        
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                          <ul class="navbar-nav">
+                            <li class="nav-item active">
+                              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="/new">Result</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="/new2">Login</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            </li> -->
+                          </ul>
+                        </div>
+                      </nav>
+          
+                   
+                </div>
+                    
+           
+             
+      
+          
+         
+        <div class="jumbotron">
+            <img src="{% static 'dj.png'%}" alt="no image" width="250" height="250">
+            <p class="lead">Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of Web development, so you can focus on writing your app without needing to reinvent the wheel. It’s free and open source.</p>
+            <hr class="my-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam asperiores rem rerum, dolores, consequatur repellendus expedita pariatur voluptatibus velit quasi voluptates ut sed vitae accusantium commodi laudantium laboriosam sit. Amet!</p>
+        </div>
+        <div class="container mb-5">
+                <div class="row" style="margin-top: 5em;">
+                        
+                        <div class="col">
+                            <div>
+                                    <img src="{% static 'install.png'%}" alt="no image" width="100" height="100">
+                                    <h2>QuickInstallation</h2>
+
+                            </div>
+                            
+                            <p>
+                                    Shift right-click your project folder to open a command window.<br>
+                                    Type in env_myclub\scripts\activate to run your virtual environment.<br>
+                                    Change into your site directory ( cd myclub_site ) to run manage.py commands (e.g. runserver ).
+                            </p>
+                        </div>
+                        <div class="w-5"></div>
+                        <div class="col">
+                            <div class="w-5">
+                                    <img src="{% static 'code.png'%}" alt="no image" width="100" height="100">
+                                    <h2>SimpleCoding</h2>
+                                    <p>You’ve seen the craze for learning code. But what exactly is coding? Coding is what makes it possible for us to create computer software, apps and websites. Your browser, your OS, the apps on your phone, Facebook, and this website – they’re all made with code</p>
+                            </div> 
+                            
+                        </div>
+                        <div class="col">
+                            
+                                <img src="{% static 'deploy.png'%}" alt="no image" width="100" height="100">
+                                <h2>EasyDeployment</h2>
+                             <p>Application Deployments define the package of software components that make up an application in a particular environment, e.g. development or production. ... Application Deployments are used to represent things such as the Production deployment of 'MyApp', as opposed to the Test instance of 'MyApp'</p>
+                        </div>
+                        
+                    </div>
+        </div>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                    <img src="{% static 'download.png'%}" alt="no image" width="100" height="100">
+                   <a href="https://getbootstrap.com/" ><h3>Download</h3></a>
+            </div>
+            <div class="col"></div>
+        </div>
+       <div class="jumbotron">
+           <div class="row">
+               <div class="col"></div>
+                       <div class="col">
+                            <img src="{% static 'profile-male.png'%}" alt="no image" width="100" height="100">
+                            <h1 class="display-4">Login</h1>
+                            <form method="" action="">
+                           <input type="text" class="form-control" placeholder="username">
+                           <input type="password" class="form-control" placeholder="password">
+                         
+                          <button type="submit" class="btn btn-primary">login</button>
+                        </form>
+                        </div>
+                        <div class="col"></div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       
+</div>
+
+   
+   
+        
+        
+    
+        
+            
+            
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        </body>
+</html>
